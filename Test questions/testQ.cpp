@@ -75,6 +75,14 @@ int main(){
         l = d - 1;
     }
 
+    if (isalpha(s[l]) == false || isdigit(s[d]) == false){
+            while( isdigit(s[d])==false ){
+                d++;
+            }
+    }
+
+    l = d-1;
+
     for (auto ele : letters)
     {
 
